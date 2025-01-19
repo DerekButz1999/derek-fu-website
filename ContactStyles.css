@@ -47,3 +47,61 @@ body {
 .headerNavItem:hover:after {
     width: 50%;
 }
+
+.contactPageSection {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 10px;
+    background-color: white;
+    margin-left: 10%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+.contactSectionHeaderOne {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgb(15, 92, 155);
+    font-size: 32px;
+}
+
+.contactSubSection {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    color: rgb(100, 100, 100);
+}
+
+.contactSubSectionIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgb(15, 92, 155);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: 1.5%;
+    margin-right: 2%;
+}
+
+.icon {
+    position: absolute;
+    color:white;
+}
+
+p {
+    margin-top: -10px;
+}
+
+.fa-linkedin {
+    color: rgb(100, 100, 100);
+    font-size: 25px;
+}
+
+.fa-linkedin:hover {
+    color: black
+}
