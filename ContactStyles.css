@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white
+}
+
+.contactPageBody {
+    background-color:rgb(49, 157, 234);
+}
+
+.websiteHeader {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    align-items: center;
+}
+
+.headerTitle {
+    margin-left: 5%;
+    color: rgb(49, 157, 234);
+}
+
+.headerNav {
+    margin-left: auto;
+    margin-right: 5%;
+}
+
+.headerNavItem {
+    text-decoration: none;
+    color: rgb(49, 157, 234);
+    margin-right: 2rem;
+    position: relative;
+}
+
+.headerNavItem::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    left: 0px;
+    bottom: 0px;
+    width: 0;
+    background: rgb(49, 157, 234);
+    transition: width 0.2s;
+}
+
+.headerNavItem:hover:after {
+    width: 50%;
+}

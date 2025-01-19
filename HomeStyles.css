@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+h1 {
+    font-size: 4rem;
+}
+
+.description {
+    margin-top: -40px;
+    font-size: 2rem;
+}
+
+.underline {
+    color: rgb(49, 157, 234, 1.0);
+    background-color: white;
+    padding-right: 5px;
+}
+
+.homePageNav {
+    margin-top: 10px;
+}
+
+.homePageNavNavItem {
+    position: relative;
+    margin-right: 2rem;
+}
+
+.homePageNavNavItem::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    left: 0px;
+    bottom: 0px;
+    width: 0;
+    background: white;
+    transition: width 0.2s;
+}
+
+.homePageNavNavItem:hover:after {
+    width: 50%;
+}
+
+.linkedinIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(219, 219, 219);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.linkedinIcon:hover {
+    background-color: black;
+}
+
+
+.homePageBody {
+    background-color:rgb(49, 157, 234, 1.0)
+}
+
+.homePage {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-top: 200px;
+}
