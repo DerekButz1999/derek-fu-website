@@ -72,14 +72,32 @@ body {
 }
 
 .profileImage {
-    width: 350px;
+    width: 500px;
     height: 450px;
     margin-left: 20px;
     padding-bottom: 10px;
 }
 
 .aboutSectionText {
+    font-size: 18px;
     padding-left: 20px;
     padding-right: 30px;
     color: rgb(100, 100, 100);
+    margin-top: -15px;
+}
+
+@media (max-width: 1000px) {
+    .aboutSectionMain {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 700px) {
+    .profileImage {
+        width: 350px;
+        height: 350px;
+        margin-left: 20px;
+        padding-bottom: 10px;
+    }
 }

@@ -47,3 +47,23 @@ body {
 .headerNavItem:hover:after {
     width: 50%;
 }
+
+.resumePageSection {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 10px;
+    background-color: white;
+    margin-left: 10%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: rgb(100, 100, 100);
+}
+
+p {
+    color: rgb(100, 100, 100);
+}
