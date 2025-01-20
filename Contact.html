@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="ContactStyles.css">
     <script src="https://kit.fontawesome.com/787e078303.js" crossorigin="anonymous"></script>
+    <script src="Script.js"></script>
     <title>Derek Fu's Website</title>
 </head>
 <body class="contactPageBody">
     <header class="websiteHeader">
         <h1 class="headerTitle">Derek Fu</h1>
         <nav class="headerNav">
-            <a href="Home.html" class="headerNavItem">Home</a>
-            <a href="Resume.html" class="headerNavItem">Resume</a>
-            <a href="About.html" class="headerNavItem">About</a>
-            <a href="Contact.html" class="headerNavItem">Contact</a>
+            <span onclick="transitionToPage('Index.html')" class="headerNavItem">Home</span>
+            <span onclick="transitionToPage('Resume.html')" class="headerNavItem">Resume</span>
+            <span onclick="transitionToPage('About.html')" class="headerNavItem">About</span>
+            <span onclick="transitionToPage('Contact.html')" class="headerNavItem">Contact</span>
         </nav>
     </header>
     <section class="contactPageSection">

@@ -4,21 +4,192 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="ResumeStyles.css">
+    <script src="Script.js"></script>
     <title>Resume Page</title>
 </head>
 <body class="resumePageBody">
     <header class="websiteHeader">
         <h1 class="headerTitle">Derek Fu</h1>
         <nav class="headerNav">
-            <a href="Home.html" class="headerNavItem">Home</a>
-            <a href="Resume.html" class="headerNavItem">Resume</a>
-            <a href="About.html" class="headerNavItem">About</a>
-            <a href="Contact.html" class="headerNavItem">Contact</a>
+            <span onclick="transitionToPage('Index.html')" class="headerNavItem">Home</span>
+            <span onclick="transitionToPage('Resume.html')" class="headerNavItem">Resume</span>
+            <span onclick="transitionToPage('About.html')" class="headerNavItem">About</span>
+            <span onclick="transitionToPage('Contact.html')" class="headerNavItem">Contact</span>
         </nav>
     </header>
     <section class="resumePageSection">
-        <h2>Resume</h2>
-        <p>You can find my professional experience, skills, and education below:</p>
+        <h2 class="resumeSectionHeaderTwo">RESUME<hr></h2>
+        <section class="resumeContent">
+            <section class="resumeContentSection">
+                <div>
+                    <h3>EDUCATION</h3>
+                    <section class="body">
+                        <div class="bodyTitle">
+                            <div class="bulletPointLarge"></div>
+                            <h4>University of California, Berkeley</h4>
+                        </div>
+                        <div class="bodyContent">
+                            <div class="bodyContentLocation" style="width: 240px;">
+                                Aug, 2018 - May, 2022 | Berkeley, CA
+                            </div>
+                            <div class="bodyContentPosition">Bachelor of Science</div>
+                            <ul>
+                                <li>Major: Electrical Engineering and Computer Science</li>
+                                <br>
+                                <li>
+                                    Course Work: The Structure and Interpretation of Computer Programs, Data Structures, 
+                                    Digital Signal Processing, Signals and Systems, Database Systems, Computer Architecture, 
+                                    Designing Information Devices and Systems, Optimization Models in Engineering, 
+                                    Introduction to Machine Learning, Introduction to Artificial Intelligence, 
+                                    Efficient Algorithms and Intractable Problems
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <div>
+                    <h3>Technical Skills</h3>
+                    <section class="body">
+                        <div class="bodyContent" style="margin-top: -25px;">
+                            <ul>
+                                <li>
+                                    Languages: 
+                                    <br> Python, Java, JavaScript, C#, C++, SQL, HTML/CSS
+                                </li>
+                                <br>
+                                <li>
+                                    Developer Tools: 
+                                    <br> Git, Github, Slack, Jira, Visual Studio, Microsoft SQL Management Studio, React, Node.js
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <div>
+                    <h3>Projects</h3>
+                    <section class="body">
+                        <div class="bodyTitle">
+                            <div class="bulletPointLarge"></div>
+                            <h4>Successful Rookie Database</h4>
+                        </div>
+                        <div class="bodyContent" style="margin-top: -25px; margin-bottom: 20px;">
+                            <ul>
+                                <li>
+                                    Independent, semester long project implementation of a bare-bone database system in Java that supports 
+                                    executing transactions in series.
+                                </li>
+                                <br>
+                                <li>
+                                    Developed page indexing, table joining, query optimization, concurrency, and recovery by exploring 
+                                    various data structures and algorithms.
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="body">
+                        <div class="bodyTitle">
+                            <div class="bulletPointLarge"></div>
+                            <h4>Bear Map</h4>
+                        </div>
+                        <div class="bodyContent" style="margin-top: -25px; margin-bottom: 20px;">
+                            <ul>
+                                <li>
+                                    Java back end implementation of a web map server similar to Google map. The program takes in URL 
+                                    from a user and displays a map of the city of Berkeley. The interface supports scrolling, zooming, 
+                                    location search, autocomplete, and route finding.
+                                </li>
+                                <br>
+                                <li>
+                                    Added navigation feature that uses A* search route to generate a sequence of instructions to get to the 
+                                    destination.
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="body">
+                        <div class="bodyTitle">
+                            <div class="bulletPointLarge"></div>
+                            <h4>Computer Science Mentorship</h4>
+                        </div>
+                        <div class="bodyContent" style="margin-top: -25px; margin-bottom: 20px;">
+                            <ul>
+                                <li>
+                                    Designed lectures and sampled problems that helped consolidate data structure concepts.
+                                </li>
+                                <br>
+                                <li>
+                                    Taught weekly discussion sessions and communicated with senior mentors and students to clarify 
+                                    difficult concepts and problems.
+                                </li>
+                                <br>
+                                <li>
+                                    Participated in team meetings and seminars that improved quality of discussions, positive feedback 
+                                    from students.
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </section>
+            <section class="resumeContentSectionRight">
+                <div>
+                    <h3>PROFESSIONAL EXPERIENCE</h3>
+                    <section class="body" style="margin-bottom: 20px;">
+                        <div class="bodyTitle">
+                            <div class="bulletPointLarge"></div>
+                            <h4>CommScope</h4>
+                        </div>
+                        <div class="bodyContent">
+                            <div class="bodyContentLocation" style="width: 260px;">
+                                Aug, 2022 - June, 2024 | San Diego, CA
+                            </div>
+                            <div class="bodyContentPosition">Software Engineer</div>
+                            <ul>
+                                <li>
+                                    Partnered with STMicroelectronics to develop a demo of security software solutions utilizing
+                                    STMicroelectronics hardware. Implemented embedded firmware and client UI interface,
+                                    boosting customer interest and engagement.
+                                </li>
+                                <br>
+                                <li>
+                                    Designed, developed, and tested frontend and backend components for PKI config web portal
+                                    using ASP.NET, offering a streamlined process for both customers and internal staff, enhancing
+                                    operational efficiency and reducing workflow completion time from half a day to an hour.
+                                </li>
+                                <br>
+                                <li>
+                                    Enhanced certificate management web portal functionality by designing, developing, and testing
+                                    new features for front-end UI and backend API services.
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section class="body">
+                        <div class="bodyTitle">
+                            <div class="bulletPointLarge"></div>
+                            <h4>Curajoy</h4>
+                        </div>
+                        <div class="bodyContent">
+                            <div class="bodyContentLocation" style="width: 230px;">
+                                Oct, 2024 - Current | San Diego, CA
+                            </div>
+                            <div class="bodyContentPosition">Software Developer</div>
+                            <ul>
+                                <li>
+                                    Designed and implemented reusable cross-browser web components using Tailwind CSS and
+                                    Next.js for company site.
+                                </li>
+                                <br>
+                                <li>
+                                    Researched and configured testing frameworks like Jest and Storybook to enhance front-end
+                                    testing process.
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </section>
     </section>
 </body>
 </html>
