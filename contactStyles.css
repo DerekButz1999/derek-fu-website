@@ -2,11 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    color: white;
     opacity: 0;
     transition: opacity .5s;
 }
 
-.aboutPageBody {
+.contactPageBody {
     background-color:rgb(49, 157, 234);
 }
 
@@ -50,7 +51,7 @@ body {
     width: 50%;
 }
 
-.aboutPageSection {
+.contactPageSection {
     display: flex;
     flex-direction: column;
     width: 80%;
@@ -62,45 +63,53 @@ body {
     border-radius: 10px;
 }
 
-.aboutSectionHeaderOne {
+.contactSectionHeaderOne {
     margin-left: 20px;
     margin-right: 20px;
     color: rgb(15, 92, 155);
     font-size: 32px;
+    margin-bottom: 0px;
 }
 
-.aboutSectionMain {
+.contactSubSection {
     display: flex;
     flex-direction: row;
+    margin-bottom: 20px;
+    color: rgb(100, 100, 100);
 }
 
-.profileImage {
-    width: 500px;
-    height: 450px;
+.contactSubSectionIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgb(15, 92, 155);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
     margin-left: 20px;
-    padding-bottom: 10px;
+    margin-top: 1.5%;
+    margin-right: 2%;
 }
 
-.aboutSectionText {
-    font-size: 18px;
-    padding-left: 20px;
-    padding-right: 30px;
-    color: black;
-    margin-top: -15px;
+.icon {
+    position: absolute;
+    color:white;
 }
 
-@media (max-width: 1000px) {
-    .aboutSectionMain {
-        display: flex;
-        flex-direction: column;
-    }
+p {
+    margin-top: -10px;
 }
 
-@media (max-width: 700px) {
-    .profileImage {
-        width: 350px;
-        height: 350px;
-        margin-left: 20px;
-        padding-bottom: 10px;
-    }
+.socialNetwork {
+    margin-bottom: 5px;
+}
+.fa-linkedin {
+    color: rgb(15, 92, 155);
+    font-size: 25px;
+    transition: color 0.5s ease;
+}
+
+.fa-linkedin:hover {
+    color: rgb(100, 100, 100)
 }
